@@ -1,0 +1,10 @@
+fastapi==0.120.1
+python-multipart==0.0.9
+pandas==2.3.3
+pydantic==2.12.3
+torch==2.9.0
+uvicorn[standard]==0.38.0
+tensorboard==2.20.0
+python-keycloak
+requests
+matplotlib

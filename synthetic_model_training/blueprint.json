@@ -1,0 +1,24 @@
+{
+  "name": "Synthetic Model Training (Standalone)",
+  "pipeline_id": "synthetic-model-training-standalone",
+  "creation_date": "2026-08-15",
+  "type": "pipeline-topology/v2",
+  "version": "2.0",
+  "nodes": [
+    {
+      "container_name": "synthetic_model_training",
+      "proto_uri": "synthetic_model_training.proto",
+      "image": "docker-registry.inesctec.pt/cpes/european-projects/aieffect/tef-services/synthetic_model_training:latest",
+      "node_type": "MLModel",
+      "operation_signature_list": [
+        {
+          "operation_signature": {
+            "operation_name": "TrainModel",
+            "output_message_name": "TrainModelResponse"
+          },
+          "connected_to": []
+        }
+      ]
+    }
+  ]
+}

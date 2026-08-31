@@ -1,0 +1,9 @@
+{
+  "docker_info_list": [
+    {
+      "container_name": "synthetic_data_generation",
+      "ip_address": "synthetic-data-generation",
+      "port": "600"
+    }
+  ]
+}

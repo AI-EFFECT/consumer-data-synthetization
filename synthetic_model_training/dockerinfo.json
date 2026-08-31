@@ -1,0 +1,9 @@
+{
+  "docker_info_list": [
+    {
+      "container_name": "synthetic_model_training",
+      "ip_address": "synthetic-model-training",
+      "port": "601"
+    }
+  ]
+}

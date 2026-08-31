@@ -1,0 +1,38 @@
+{
+  "name": "Synthetic Data Generation (Standalone)",
+  "pipeline_id": "synthetic-data-generation-standalone",
+  "creation_date": "2026-08-15",
+  "type": "pipeline-topology/v2",
+  "version": "2.0",
+  "nodes": [
+    {
+      "container_name": "synthetic_data_generation",
+      "proto_uri": "synthetic_data_generation.proto",
+      "image": "docker-registry.inesctec.pt/cpes/european-projects/aieffect/tef-services/synthetic_data:latest",
+      "node_type": "MLModel",
+      "operation_signature_list": [
+        {
+          "operation_signature": {
+            "operation_name": "GenerateData",
+            "output_message_name": "GenerateDataResponse"
+          },
+          "connected_to": []
+        },
+        {
+          "operation_signature": {
+            "operation_name": "ListModels",
+            "output_message_name": "ListModelsResponse"
+          },
+          "connected_to": []
+        },
+        {
+          "operation_signature": {
+            "operation_name": "GetModelInfo",
+            "output_message_name": "GetModelInfoResponse"
+          },
+          "connected_to": []
+        }
+      ]
+    }
+  ]
+}

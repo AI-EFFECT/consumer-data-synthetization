@@ -1,4 +1,4 @@
-# Synthetic Data
+# Consumer-data-synthetization
 
 The platform's synthetic data feature is split across three components. All of
 them work with the same kind of model (DoppelGANger, a GAN for time series) and
